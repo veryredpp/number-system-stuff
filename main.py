@@ -1,6 +1,7 @@
 import os
 import sys
 import numberSystems
+import time
 
 sys.path.append(os.path.realpath("."))
 import inquirer
@@ -97,6 +98,7 @@ if input_base == 10:
         print(numberSystems.dec2any(number, 8))
     elif output_base == 16:
         print(numberSystems.dec2any(number, 16))
+    time.sleep(5)
 elif input_base == 2:
     if output_base == 10:
         print(numberSystems.twosbin2dec(number))
@@ -104,6 +106,7 @@ elif input_base == 2:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 2), 8))
     elif output_base == 16:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 2), 16))
+    time.sleep(5)
 elif input_base == 8:
     if output_base == 10:
         print(numberSystems.any2dec(number, 8))
@@ -111,6 +114,7 @@ elif input_base == 8:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 8), 2))
     elif output_base == 16:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 8), 16))
+    time.sleep(5)
 elif input_base == 16:
     if output_base == 10:
         print(numberSystems.any2dec(number, 16))
@@ -118,3 +122,4 @@ elif input_base == 16:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 16), 2))
     elif output_base == 8:
         print(numberSystems.dec2any(numberSystems.any2dec(number, 16), 8))
+    time.sleep(5)
