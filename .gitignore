@@ -3,3 +3,6 @@ __pycache__/
 # Ignore out.txt
 out.txt
 ```
+#ignore build and dist folders
+build/
+dist/
