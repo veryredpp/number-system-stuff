@@ -66,7 +66,7 @@ def twosbin2dec(num:str):
             i +=1
 
     elif dotCount == 0:
-        sumInt = any2dec(num, 2)
+        sumInt = any2dec(num, 2, twosComplement=True)
         
     return sumFrac + sumInt
 
